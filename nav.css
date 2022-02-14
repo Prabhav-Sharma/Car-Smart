@@ -1,0 +1,52 @@
+:root{
+    --sp-0-75:0.75rem;
+}
+
+nav {
+    justify-content: space-evenly;
+    gap: var(--sp-1);
+    width: 95vw;
+    padding: var(--sp-0-25) var(--sp-1);
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav-title {
+    flex-direction: row;
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+
+.title-highlight {
+    color: var(--primary-color);
+}
+.nav-title:hover {
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.nav-title:first-child:hover {
+    transform: translateX(5px);
+}
+
+input {
+    height: fit-content;
+    align-self: center;
+    max-width: 30rem;
+    flex-basis: 15rem;
+    flex-grow: 1;
+}
+
+.links-top {
+    gap: var(--sp-1);
+}
+
+.icon {
+    padding: 0;
+    padding-top: 2px;
+    width: 2rem;
+}
+
+.nav-icon{
+    filter: invert(100%);
+}

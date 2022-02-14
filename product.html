@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarSmart</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <nav class="nav-row flex-row">
+        <div class="nav-logo flex-row">
+            <a href="index.html" class="nav-title flex-row">
+                <h2>Car</h2>
+                <h2 class="title-highlight">Smart</h2>
+            </a>
+        </div>
+        <input placeholder="Search" class="search-input input-m input-round-border">
+        <div class="nav-links links-top flex-row">
+            <a class="nav-link" href="#"><button class="btn prim-btn btn-round">Login</button></a>
+            <a class="nav-link" href="#"><img class="icon nav-icon" src="/Assets/bookmark.png"></a>
+            <a class="nav-link" href="#"><img class="icon nav-icon" src="/Assets/cart.png"></a>
+        </div>
+    </nav>
+    <main>
+        <aside class="flex-column">
+            <div class="filter-top flex-row">
+                <h4>Filters</h4>
+                <h5>Clear</h5>
+            </div>
+            <h4>Price (in Lacs)</h4>
+            <div class="range-values flex-row">
+                <span>4</span>
+                <span>80</span>
+                <span>210</span>
+            </div>
+            <input class="range-input" type="range" min="4" max="250" value="4">
+            <h4>Category</h4>
+            <label class="flex-row"><input class="checkbox-input" type="checkbox">Electric Vehicle</label>
+            <label class="flex-row"><input class="checkbox-input" type="checkbox">SUV</label>
+            <label class="flex-row"><input class="checkbox-input" type="checkbox">Sedan</label>
+            <label class="flex-row"><input class="checkbox-input" type="checkbox">Hatchback</label>
+            <label class="flex-row"><input class="checkbox-input" type="checkbox">Convertible</label>
+            <label class="flex-row"><input class="checkbox-input" type="checkbox">Sports</label>
+            <h4>Rating</h4>
+            <label class="flex-row"><input class="radio-input" name="rating" type="radio">
+                <div class="rating flex-row">
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                </div>
+            </label>
+            <label class="flex-row"><input class="radio-input" name="rating" type="radio">
+                <div class="rating flex-row">
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                </div>
+            </label>
+            <label class="flex-row"><input class="radio-input" name="rating" type="radio">
+                <div class="rating flex-row">
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                </div>
+            </label>
+            <label class="flex-row"><input class="radio-input" name="rating" type="radio">
+                <div class="rating flex-row">
+                    <span class="rating-star">★</span>
+                    <span class="rating-star">★</span>
+                </div>
+            </label>
+            <label class="flex-row"><input class="radio-input" name="rating" type="radio">
+                <div class="rating flex-row">
+                    <span class="rating-star">★</span>
+                </div>
+            </label>
+            <h4>Sort By</h4>
+            <label class="flex-row"><input class="radio-input" type="radio" name="sort">Low to High</label>
+            <label class="flex-row"><input class="radio-input" type="radio" name="sort">High to low</label>
+        </aside>
+        <section>
+            <div class="section-heading flex-row">
+                <h4>Showing All Products</h4>
+                <h5> (Showing 12 products)</h5>
+            </div>
+            <br>
+            <div class="product-grid grid auto-grid">
+                <div class="card  flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BYD/E6/8675/1639978661245/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">BYD E6</p>
+                        <p class="prod-cost">₹29.15L</p>
+                        <p class="para-s gray-text">EMI starts at 56,047/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card  flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/Taycan/7041/1636711367887/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Porche Taycan</p>
+                        <p class="prod-cost">₹1.15-2.10Cr</p>
+                        <p class="para-s gray-text">EMI starts at 2,88,898/month</p>
+                    </div>
+                    <div class="card-btns  flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card  flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Jaguar/I-Pace/8078/1642496994887/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Jaguar I-pace</p>
+                        <p class="prod-cost">₹1.08-1.12Cr</p>
+                        <p class="para-s gray-text">EMI starts at 2,07,897/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card  flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/RS-e-tron-GT/8607/1632310533051/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Audi RS e-tron GT</p>
+                        <p class="prod-cost">₹2.04Cr</p>
+                        <p class="para-s gray-text">EMI starts at 3,94,085/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/e-tron-GT/8340/1632295355958/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Audi e-tron GT</p>
+                        <p class="prod-cost">₹1.79Cr</p>
+                        <p class="para-s gray-text">EMI starts at 3,45,843/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Tigor-EV/8574/1630405193652/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Tata Tigor-EV</p>
+                        <p class="prod-cost">₹11.99-13.14L</p>
+                        <p class="para-s gray-text">EMI starts at 24,014/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/e-tron/8453/1626937070378/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Audi e-tron</p>
+                        <p class="prod-cost">₹1-1.18Cr</p>
+                        <p class="para-s gray-text">EMI starts at 1,94,145/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon-EV/7042/1576845369560/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Tata Nexon EV</p>
+                        <p class="prod-cost">₹14.29-16.90L</p>
+                        <p class="para-s gray-text">EMI starts at 28,828/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Strom-Motors/R3/8412/1615967980998/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Strom Motors R3</p>
+                        <p class="prod-cost">₹4.50L</p>
+                        <p class="para-s gray-text">EMI starts at 8,565/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/EQC/6589/1602155007965/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Mercedes-Benz EQC</p>
+                        <p class="prod-cost">₹1.06Cr</p>
+                        <p class="para-s gray-text">EMI starts at 2,05,381/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Hyundai-Kona/6234/1562646651262/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Hyundai Kona Electric</p>
+                        <p class="prod-cost">₹23.79-23.97L</p>
+                        <p class="para-s gray-text">EMI starts at 45,740/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card flex-column">
+                    <div class=img-container>
+                        <img class="prod-img"
+                            src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/E-Verito/3526/1603712637421/front-left-side-47.jpg?tr=w-456">
+                    </div>
+                    <div class="text-container flex-column">
+                        <p class="prod-title">Mahindra E-Verito</p>
+                        <p class="prod-cost">₹10.15-10.49L</p>
+                        <p class="para-s gray-text">EMI starts at 19,593/month</p>
+                    </div>
+                    <div class="card-btns flex-row">
+                        <button class="btn prim-acc-btn">Bookmark</button>
+                        <button class="btn prim-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
