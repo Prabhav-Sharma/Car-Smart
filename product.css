@@ -1,0 +1,163 @@
+@import url("https://odysseyui.netlify.app/CSS/odyssey.css");
+@import url("nav.css");
+
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-title{
+    color:var(--black);
+}
+
+.nav-icon{
+    filter: none;
+}
+.search-input{
+    background-image: url(/Assets/search.png);
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    padding-left: 2rem;
+}
+
+.range-values{
+    justify-content: space-between;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 17rem auto;
+    padding-top: var(--sp-0-5);
+    gap:var(--sp-0-5);
+}
+
+aside{
+    gap:var(--sp-0-75);
+    border-right: 1px solid var(--solid-gray);
+    padding: var(--sp-0-25);
+    padding-right: var(--sp-1);
+}
+
+.filter-top{
+    justify-content: space-between;
+}
+
+.range-input{
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    flex-basis: 1rem;
+    width: 100%;
+    flex-grow: 0;
+    color: var(--secondary-color);
+}
+
+.checkbox-input, .radio-input{
+    flex-basis: 1rem;
+    flex-grow: 0;
+}
+
+.rating>*{
+    font-size: 1.5rem;
+}
+
+.section-heading{
+    align-items: center;
+    gap:var(--sp-0-25);
+}
+
+.section-heading>h5{
+    color: var(--solid-gray);
+    line-height: normal;
+}
+
+.product-grid{
+    grid-template-columns: repeat(auto-fill, 16rem);
+    gap:var(--sp-0-25);
+}
+
+.card{
+    flex-basis: 14rem;
+    outline: none;
+    border: 1px solid var(--solid-gray);
+    margin-right: var(--sp-0-5);
+}
+
+.card>*{
+    justify-content: center;
+}
+
+.img-container{
+    max-width: 100%;
+}
+
+.prod-cost{
+    font-size: 1rem;
+}
+
+.prod-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-btns, .card-btns>button{
+    justify-content: center;
+    width: 100%;
+    gap:var(--sp-0-5);
+}
+
+.card-btns>button{
+    font-size: 1rem;
+}
+
+@media only screen and (max-width:900px){
+    main{
+        display: grid;
+        grid-template-columns: 0 auto;
+    }
+
+   aside{
+       visibility:hidden;
+   }
+
+   .product-grid{
+    grid-template-columns: repeat(auto-fill, 15rem);
+    gap: var(--sp-0-5);
+}
+
+}
+
+@media only screen and (max-width:550px){
+    html{
+        font-size: 80%;
+    }
+
+    .product-grid{
+        gap:var(--sp-1);
+    }
+}
+
+@media only screen and (max-width:400px){
+    html{
+        font-size: 70%;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(auto-fill, 14rem);
+        gap:var(--sp-1);
+        width: 100vw;
+    }
+}
+
+
+
+
+
+

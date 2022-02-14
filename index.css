@@ -1,58 +1,20 @@
 @import url("https://odysseyui.netlify.app/CSS/odyssey.css");
+@import url("nav.css");
 
-.title-highlight {
-    color: var(--primary-color);
+html{
+    background-image: url(/Assets/main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 body {
     margin: 0;
 }
 
-nav {
-    top: 0;
-    justify-content: space-evenly;
-    gap: 5rem;
-    max-width: 100%;
-    padding: var(--sp-0-25) var(--sp-1);
-    align-items: center;
-}
-
-.nav-title {
-    flex-direction: row;
-    transition: all linear 0.3s;
-}
-
-.nav-title:hover {
-    flex-direction: row-reverse;
-    cursor: pointer;
-}
-
-.nav-title:first-child:hover {
-    transform: translateX(5px);
-}
-
-input {
-    height: fit-content;
-    align-self: center;
-    max-width: 30rem;
-    flex-basis: 15rem;
-    flex-grow: 1;
-}
-
-.links-top {
-    gap: var(--sp-1);
-}
-
-.icon {
-    padding: 0;
-    padding-top: 2px;
-    width: 2rem;
-}
-
 main {
     padding: 0;
     margin: 0 var(--sp-1);
-    max-width: 100%;
+    max-width: 92vw;
     justify-content: center;
     align-items: center;
     gap: var(--sp-1);
@@ -60,7 +22,7 @@ main {
 
 .top-wrapper {
     gap: var(--sp-1);
-    max-width: 100%;
+    max-width: 80vw;
     justify-content: center;
     overflow: auto;
 }
@@ -78,6 +40,7 @@ section {
     text-align: center;
     padding: 0;
     width: 100%;
+    background-color: var(--white);
 }
 
 .card-midtext {
@@ -85,14 +48,12 @@ section {
     height: 7rem;
     overflow: hidden;
     transition: all linear 0.2s;
-    box-shadow: 2px 2px 5px var(--black);
     padding: 1px;
     border-radius: var(--sp-0-5);
 }
 
 .card-midtext:hover {
     transform: scale(95%);
-    box-shadow: 1px 1px 2px var(--black);
 }
 
 .prod-img {
@@ -104,7 +65,8 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    margin: auto;
+    max-width: 80vw;
     align-items: center;
 }
 
@@ -153,7 +115,7 @@ footer {
     margin-top: auto;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: var(--sp-1);
     bottom: 0;
     color: var(--white);
@@ -169,9 +131,6 @@ footer {
 }
 
 @media only screen and (max-width:1200px) {
-    html {
-        font-size: 95%;
-    }
 
     .card-midtext:last-child {
         display: none;
@@ -191,12 +150,5 @@ footer {
 
     .arrival-wrapper {
         flex-direction: column;
-    }
-}
-
-@media only screen and (max-width:700px) {
-
-    html {
-        font-size: 75%;
     }
 }
