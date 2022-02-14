@@ -1,48 +1,6 @@
 @import url("https://odysseyui.netlify.app/CSS/odyssey.css");
+@import url("nav.css");
 
-
-nav {
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 100%;
-    padding: var(--sp-0-25) var(--sp-0-25);  
-}
-
-.nav-title {
-    flex-direction: row;
-    transition: all linear 0.3s;
-}
-
-.nav-title:hover {
-    cursor: pointer;
-    flex-direction: row-reverse;
-}
-
-.nav-title:first-child:hover {
-    transform: translateX(5px);
-}
-
-.title-highlight {
-    color: var(--primary-color);
-}
-
-input {
-    align-self: center;
-    flex-basis: 15rem;
-    flex-grow: 1;
-    height: fit-content;
-    max-width: 30rem;
-}
-
-.links-top {
-    gap: var(--sp-1);
-}
-
-.icon {
-    padding: 0;
-    padding-top: 2px;
-    width: 2rem;
-}
 
 main {
     margin-top: var(--sp-1);

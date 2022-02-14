@@ -50,3 +50,11 @@ input {
 .nav-icon{
     filter: invert(100%);
 }
+
+.search-input{
+    background-image: url("/Assets/search.png");
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    padding-left: 2rem;
+}
