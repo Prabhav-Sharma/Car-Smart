@@ -1,93 +1,97 @@
 @import url("https://odysseyui.netlify.app/CSS/odyssey.css");
 @import url("nav.css");
 
-html{
-    background-color: var(--gray); 
+html {
+    background-color: var(--gray);
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
+body {
     box-sizing: border-box;
+    height: 100vh;
     margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
-.nav-title{
-    color:var(--black);
+.nav-title {
+    color: var(--black);
 }
 
-.nav-icon{
+.nav-icon {
     filter: none;
 }
 
-main{
-    width: 100%;
-    height: calc(100vh - 50.4px);
+main {
+    align-items: center;
     justify-content: center;
-    align-items: center;   
-   
+    width: 100%;
+    height: calc(100vh - 3.125rem);
 }
 
-.login-container{
-    gap:var(--sp-0-75);
-    width: 25rem;
-    background-color: var(--white);
-    padding: var(--sp-2);
+.login-container {
     border-radius: var(--sp-0-75);
     box-shadow: 2px 2px 2px var(--black);
+    background-color: var(--white);
+    gap: var(--sp-0-75);
+    padding: var(--sp-2);
     user-select: none;
+    width: 25rem;
 }
 
-.login-title, .new-acc-link{
+.login-title,
+.new-acc-link {
     text-align: center;
 }
 
-.form-input{
+.form-input {
     width: 90%;
 }
 
-.form-wrapper{
+.form-wrapper {
     justify-content: space-between;
 }
 
-.form-wrapper>a, .new-acc-link{
+.form-wrapper>a,
+.new-acc-link {
+    color: rgb(70, 166, 204);
     font-size: 1.2rem;
-    color:rgb(70, 166, 204);
 }
 
-#login-btn, #signup-btn, .alternate-signup{
+#login-btn,
+#signup-btn,
+.alternate-signup {
     align-self: center;
     width: 95%;
 }
 
-label{
- font-family: 'Open Sans', sans-serif;
+label {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.center{
+.center {
     text-align: center;
 }
+
 @media only screen and (max-width:520px) {
 
-    main{
+    main {
         margin-left: 5rem;
     }
 
-    .login-container{
-        width:18rem;
+    .login-container {
+        width: 18rem;
     }
-    
+
 }
 
 @media only screen and (max-width:360px) {
 
-    main{
+    main {
         margin-left: 7rem;
     }
 
-    .login-container{
-        width:18rem;
+    .login-container {
+        width: 18rem;
     }
-    
+
 }
