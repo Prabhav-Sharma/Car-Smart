@@ -1,0 +1,97 @@
+@import url("https://odysseyui.netlify.app/CSS/odyssey.css");
+@import url("nav.css");
+
+html {
+    background-color: var(--gray);
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.nav-title {
+    color: var(--black);
+}
+
+.nav-icon {
+    filter: none;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 3.125rem);
+}
+
+.login-container {
+    border-radius: var(--sp-0-75);
+    box-shadow: 2px 2px 2px var(--black);
+    background-color: var(--white);
+    gap: var(--sp-0-75);
+    padding: var(--sp-2);
+    user-select: none;
+    width: 25rem;
+}
+
+.login-title,
+.new-acc-link {
+    text-align: center;
+}
+
+.form-input {
+    width: 90%;
+}
+
+.form-wrapper {
+    justify-content: space-between;
+}
+
+.form-wrapper>a,
+.new-acc-link {
+    color: rgb(70, 166, 204);
+    font-size: 1.2rem;
+}
+
+#login-btn,
+#signup-btn,
+.alternate-signup {
+    align-self: center;
+    width: 95%;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width:520px) {
+
+    main {
+        margin-left: 5rem;
+    }
+
+    .login-container {
+        width: 18rem;
+    }
+
+}
+
+@media only screen and (max-width:360px) {
+
+    main {
+        margin-left: 7rem;
+    }
+
+    .login-container {
+        width: 18rem;
+    }
+
+}
