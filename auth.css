@@ -1,6 +1,10 @@
 @import url("https://odysseyui.netlify.app/CSS/odyssey.css");
 @import url("nav.css");
 
+html{
+    background-color: var(--gray); 
+}
+
 body{
     height: 100vh;
     width: 100vw;
@@ -18,11 +22,11 @@ body{
 }
 
 main{
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 50.4px);
     justify-content: center;
     align-items: center;   
-    background-color: var(--gray); 
+   
 }
 
 .login-container{
@@ -52,11 +56,38 @@ main{
     color:rgb(70, 166, 204);
 }
 
-#login-btn{
+#login-btn, #signup-btn, .alternate-signup{
     align-self: center;
     width: 95%;
 }
 
 label{
  font-family: 'Open Sans', sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+@media only screen and (max-width:520px) {
+
+    main{
+        margin-left: 5rem;
+    }
+
+    .login-container{
+        width:18rem;
+    }
+    
+}
+
+@media only screen and (max-width:360px) {
+
+    main{
+        margin-left: 7rem;
+    }
+
+    .login-container{
+        width:18rem;
+    }
+    
 }
