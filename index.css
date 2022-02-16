@@ -32,6 +32,10 @@ section {
     max-width: 100%;
 }
 
+a{
+    color: var(--black);
+}
+
 .overlay-text {
     top: 40%;
     opacity: 70%;
