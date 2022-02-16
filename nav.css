@@ -2,6 +2,10 @@
     --sp-0-75:0.75rem;
 }
 
+html{
+    background-color: var(--gray);
+}
+
 nav {
     justify-content: space-evenly;
     gap: var(--sp-1);
