@@ -1,72 +1,80 @@
-html{
+html {
     background-color: var(--gray);
     background-size: 100%;
 }
 
-body{
-width: 100vw;
-height: 100vh;
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
-main{
+main {
     width: 100%;
 }
-.item-wrapper{
+
+.item-wrapper {
     grid-template-columns: 3fr 1fr;
-    gap:2.5rem;
+    gap: 2.5rem;
     width: 95vw;
 }
 
-.card{
-    width: 100%;
+.card {
     height: max-content;
     padding: var(--sp-0-75);
-    flex-direction: column;
-}
-
-.img-container{
-    max-width: 50%;
-    align-self: center;
-
-}
-.prod-img{
     width: 100%;
 }
 
-.right-section{
-    align-items: center;
-    gap:var(--sp-1);
+.img-container {
+    max-width: 100%;
 }
 
-.right-section>span{
+.prod-img {
+    width: 100%;
+}
+
+.right-section {
+    align-items: center;
+    gap: var(--sp-1);
+}
+
+.right-section>span {
     align-items: center;
 }
 
-.checkout-container{
+.checkout-container {
     background-color: var(--white);
-    padding:var(--sp-0-75);
-    gap:var(--sp-0-75);
     border: 1px solid var(--secondary-color);
+    gap: var(--sp-0-75);
     height: max-content;
+    padding: var(--sp-0-75);
+    width: 90%;
 }
 
-.checkout-container>span{
+.checkout-container>span {
     justify-content: space-between;
 }
 
-.checkout-container>button{
+.checkout-container>button {
     align-self: center;
     width: 100%;
 }
 
 @media only screen and (max-width:880px) {
-    html{
+    html {
         font-size: 90%;
+    }
+
+    .card {
+        flex-wrap: wrap;
     }
 }
 
 @media only screen and (max-width:700px) {
-    .item-wrapper{
+    .item-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .right-section {
+        flex-direction: column;
     }
 }
