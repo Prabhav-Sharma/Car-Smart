@@ -23,7 +23,7 @@ body {
 
 main {
     align-items: center;
-    justify-content: center;
+    margin-top: 5rem;
     width: 100%;
     height: calc(100vh - 3.125rem);
 }
@@ -71,6 +71,15 @@ label {
 .center {
     text-align: center;
 }
+@media only screen and (max-width:720px) {
+
+    main {
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+
+}
+
 
 @media only screen and (max-width:520px) {
 

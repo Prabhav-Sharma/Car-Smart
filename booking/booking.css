@@ -58,13 +58,15 @@ main {
     width: 100%;
 }
 
+@media only screen and (max-width:1070px){
+    .card{
+        flex-wrap: wrap;
+    }
+} 
+
 @media only screen and (max-width:880px) {
     html {
         font-size: 90%;
-    }
-
-    .card {
-        flex-wrap: wrap;
     }
 }
 

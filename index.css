@@ -113,6 +113,10 @@ a{
     cursor: pointer;
 }
 
+.search-input{
+    max-width: 30%;
+}
+
 footer {
     background-color: var(--cadet);
     margin-top: auto;
@@ -133,9 +137,7 @@ footer {
     width: 100%;
 }
 
-@media only screen and (max-width:1200px) {
- 
-    
+@media only screen and (max-width:1200px) {   
     .midtext-card:nth-child(3){
         display: none;
     }
@@ -158,7 +160,16 @@ footer {
 }
 
 
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:500px) {
+
+    .search-input{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+        width: 90%;
+    }
 
     .midtext-card:nth-child(2){
         display: none;
